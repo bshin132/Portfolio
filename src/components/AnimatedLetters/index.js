@@ -10,5 +10,5 @@ export default function AnimatedLetters({ letterClass, array, index }) {
         </span>
       ))}
     </span>
-  );
+  )
 }
