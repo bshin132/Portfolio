@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import './index.scss';
+import Logo from '../Logo';
 import AnimatedLetters from '../AnimatedLetters';
 
 const Container = styled.div``;
@@ -72,6 +73,7 @@ export default function Home() {
     'p',
     'e',
     'r',
+    '.'
   ];
 
   useEffect(() => {
@@ -106,6 +108,9 @@ export default function Home() {
           CONTACT ME
         </Link>
       </TextCont>
+      <div>
+        <Logo />
+      </div>
     </Container>
   );
 }
