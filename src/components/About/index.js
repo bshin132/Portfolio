@@ -128,22 +128,22 @@ export default function About() {
       <CubeCont>
         <Cube className="cubespin">
           <div className="face1">
-            <FontAwesomeIcon icon={faReact} />
+            <FontAwesomeIcon icon={faReact} color="#5ed4f4" />
           </div>
           <div className="face2">
-            <FontAwesomeIcon icon={faHtml5} />
+            <FontAwesomeIcon icon={faHtml5} color="#f06529" />
           </div>
           <div className="face3">
-            <FontAwesomeIcon icon={faCss3} />
+            <FontAwesomeIcon icon={faCss3} color="#28a4d9" />
           </div>
           <div className="face4">
-            <FontAwesomeIcon icon={faJsSquare} />
+            <FontAwesomeIcon icon={faJsSquare} color="#efd81d" />
           </div>
           <div className="face5">
-            <FontAwesomeIcon icon={faGitAlt} />
+            <FontAwesomeIcon icon={faGitAlt} color="#ec4d28" />
           </div>
           <div className="face6">
-            <FontAwesomeIcon icon={faNodeJs} />
+            <FontAwesomeIcon icon={faNodeJs} color="#44883e" />
           </div>
         </Cube>
       </CubeCont>

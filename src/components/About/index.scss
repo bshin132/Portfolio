@@ -29,7 +29,7 @@
 
   .face1 {
     transform: translateZ(100px);
-    color: #5ed4f4;
+    color: #dd0031;
   }
   .face2 {
     transform: rotateY(90deg) translateZ(100px);
@@ -41,15 +41,15 @@
   }
   .face4 {
     transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
-    color: #efd81d;
+    color: #5ed4f4;
   }
   .face5 {
     transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
-    color: #ec4d28;
+    color: #efd81d;
   }
   .face6 {
     transform: rotateX(-90deg) translateZ(100px);
-    color: #44883e;
+    color: #ec4d28;
   }
 }
 
