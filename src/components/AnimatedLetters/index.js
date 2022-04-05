@@ -1,15 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
 import './index.scss';
 
-const Container = styled.div``;
-
-
-
-export default function AnimatedLetters() {
+export default function AnimatedLetters({ letterClass, array, index }) {
   return (
-    <Container>
-
-    </Container>
+    <span>
+      {array.map((char, i) => (
+        <span key={char + i} className={`${letterClass} _${i + index}`}>
+          {char}
+        </span>
+      ))}
+    </span>
   );
 }

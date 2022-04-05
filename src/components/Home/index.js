@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import './index.scss';
+import AnimatedLetters from '../AnimatedLetters';
 
 const Container = styled.div``;
 
@@ -55,13 +56,50 @@ const Subheader = styled.h2`
 `;
 
 export default function Home() {
+  const [letterClass, setLetterClass] = useState('text-animate');
+  const nameArray = ['B', 'r', 'i', 'a', 'n'];
+  const jobArray = [
+    'w',
+    'e',
+    'b',
+    ' ',
+    'd',
+    'e',
+    'v',
+    'e',
+    'l',
+    'o',
+    'p',
+    'e',
+    'r',
+  ];
+
+  useEffect(() => {
+    return setTimeout(() => {
+      setLetterClass('text-animate-hover');
+    }, 4000);
+  }, []);
+
   return (
     <Container className="container">
       <TextCont>
         <Intro>
-          Hi, <br /> I'm Brian
+          <span className={letterClass}>H</span>
+          <span className={`${letterClass} _12`}>i,</span>
           <br />
-          web developer
+          <span className={`${letterClass} _13`}>I</span>
+          <span className={`${letterClass} _14`}>'m</span>&nbsp;
+          <AnimatedLetters
+            letterClass={letterClass}
+            array={nameArray}
+            index={15}
+          />
+          <br />
+          <AnimatedLetters
+            letterClass={letterClass}
+            array={jobArray}
+            index={20}
+          />
         </Intro>
         <Subheader>Frontend Developer / UI/UX Designer</Subheader>
         <Link to="/contact" className="button">
