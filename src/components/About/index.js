@@ -1,7 +1,16 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faCss3,
+  faGitAlt,
+  faHtml5,
+  faJsSquare,
+  faNodeJs,
+  faReact,
+} from '@fortawesome/free-brands-svg-icons';
 
 const Container = styled.div``;
 
@@ -69,6 +78,19 @@ const Paragraph = styled.p`
   }
 `;
 
+const CubeCont = styled.div`
+  width: 50%;
+  height: 100%;
+  top: 0;
+  padding-top: 18%;
+  max-lines: 0;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+`;
+
+const Cube = styled.div``;
+
 export default function About() {
   const [letterClass, setLetterClass] = useState('text-animate');
 
@@ -102,6 +124,29 @@ export default function About() {
           sports fanatic, animal lover, and tech-obsessed!!!
         </Paragraph>
       </TextCont>
+
+      <CubeCont>
+        <Cube className="cubespin">
+          <div className="face1">
+            <FontAwesomeIcon icon={faReact} />
+          </div>
+          <div className="face2">
+            <FontAwesomeIcon icon={faHtml5} />
+          </div>
+          <div className="face3">
+            <FontAwesomeIcon icon={faCss3} />
+          </div>
+          <div className="face4">
+            <FontAwesomeIcon icon={faJsSquare} />
+          </div>
+          <div className="face5">
+            <FontAwesomeIcon icon={faGitAlt} />
+          </div>
+          <div className="face6">
+            <FontAwesomeIcon icon={faNodeJs} />
+          </div>
+        </Cube>
+      </CubeCont>
     </Container>
   );
 }
