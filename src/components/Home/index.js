@@ -34,7 +34,7 @@ const Intro = styled.h1`
   }
 
   &::after {
-    content: '<h1>';
+    content: '</h1>';
     font-family: 'La Belle Aurore';
     color: #ffd700;
     font-size: 18px;
