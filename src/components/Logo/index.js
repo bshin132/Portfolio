@@ -1,5 +1,4 @@
 import React from 'react';
-import './index.scss';
 import logo from '../../assets/images/logo.png';
 import styled from 'styled-components';
 
