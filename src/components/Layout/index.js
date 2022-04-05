@@ -2,6 +2,7 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import styled from 'styled-components';
 import Navbar from '../Navbar';
+import './index.scss';
 
 const Container = styled.div`
   width: 100%;
