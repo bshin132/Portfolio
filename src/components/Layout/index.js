@@ -1,6 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import styled from 'styled-components';
+import Navbar from '../Navbar';
 
 const Container = styled.div`
   width: 100%;
@@ -36,15 +37,18 @@ const BottomContentHtml = styled.span`
 
 export default function Layout() {
   return (
-    <Container>
-      <TopContent>&lt;body&gt;</TopContent>
-      <Outlet />
+    <div className="App">
+      <Navbar />
+      <Container>
+        <TopContent>&lt;body&gt;</TopContent>
+        <Outlet />
 
-      <BottomContent>
-        &lt;/body&gt;
-        <br />
-        <BottomContentHtml>&lt;/html&gt;</BottomContentHtml>
-      </BottomContent>
-    </Container>
+        <BottomContent>
+          &lt;/body&gt;
+          <br />
+          <BottomContentHtml>&lt;/html&gt;</BottomContentHtml>
+        </BottomContent>
+      </Container>
+    </div>
   );
 }
