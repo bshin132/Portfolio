@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import './index.scss';
 import Logo from '../Logo';
 import AnimatedLetters from '../AnimatedLetters';
+import Loader from 'react-loaders';
 
 const Container = styled.div``;
 
@@ -83,6 +84,7 @@ export default function Home() {
   }, []);
 
   return (
+    <>
     <Container className="container">
       <TextCont>
         <Intro>
@@ -112,5 +114,7 @@ export default function Home() {
         <Logo />
       </div>
     </Container>
+    <Loader type='pacman' />
+    </>
   );
 }

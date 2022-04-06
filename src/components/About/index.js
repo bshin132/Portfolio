@@ -15,69 +15,7 @@ import Loader from 'react-loaders';
 
 const Container = styled.div``;
 
-const TextCont = styled.div`
-  position: absolute;
-  left: 10%;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 35%;
-  vertical-align: middle;
-  display: table-cell;
-  max-height: 90%;
-`;
-
-const Intro = styled.h1`
-  font-size: 53px;
-  font-family: 'Coolvetica';
-  color: #ffd700;
-  font-weight: 400;
-  margin-top: 0;
-  position: relative;
-  margin-bottom: 40px;
-  left: 10px;
-
-  &::before {
-    content: '<h1>';
-    font-family: 'La Belle Aurore';
-    line-height: 18px;
-    font-size: 18px;
-    position: absolute;
-    margin-top: -10px;
-    left: -10px;
-    opacity: 0.6;
-  }
-
-  &::after {
-    content: '</h1>';
-    font-family: 'La Belle Aurore';
-    font-size: 18px;
-    left: -30px;
-    bottom: -20px;
-    position: absolute;
-    margin-left: 20px;
-    line-height: 18px;
-    opacity: 0.6;
-  }
-`;
-
-const Paragraph = styled.p`
-  font-style: 13px;
-  color: #fff;
-  font-weight: 300;
-  min-width: fit-content;
-  font-family: sans-serif;
-  animation: pulse 1s;
-
-  &:nth-of-type(1) {
-    animation-delay: 1.1s;
-  }
-  &:nth-of-type(2) {
-    animation-delay: 1.2s;
-  }
-  &:nth-of-type(3) {
-    animation-delay: 1.3s;
-  }
-`;
+const TextCont = styled.div``;
 
 const CubeCont = styled.div`
   width: 50%;
@@ -105,26 +43,26 @@ export default function About() {
     <>
       <Container className="container about">
         <TextCont className="text">
-          <Intro>
+          <h1>
             <AnimatedLetters
               array={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
               index={15}
               letterClass={letterClass}
             />
-          </Intro>
-          <Paragraph>
+          </h1>
+          <p>
             I'm a very higly-motivated frontend developer looking for a role in
             IT company with the opportunity to work with the latest technologies
             and expose myself to diverse projects.
-          </Paragraph>
-          <Paragraph>
+          </p>
+          <p>
             I'm confident, naturally curious, and always want to imporve myself
             to become a better developer than yesterday.
-          </Paragraph>
-          <Paragraph>
+          </p>
+          <p>
             If I define myself in one sentence, that would be a family person, a
             sports fanatic, animal lover, and tech-obsessed!!!
-          </Paragraph>
+          </p>
         </TextCont>
 
         <CubeCont>
@@ -150,7 +88,7 @@ export default function About() {
           </Cube>
         </CubeCont>
       </Container>
-      <Loader type='pacman' />
+      <Loader type="pacman" />
     </>
   );
 }
