@@ -4,13 +4,14 @@ import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faCss3,
+  faCss3Alt,
   faGitAlt,
   faHtml5,
   faJsSquare,
   faNodeJs,
   faReact,
 } from '@fortawesome/free-brands-svg-icons';
+import Loader from 'react-loaders';
 
 const Container = styled.div``;
 
@@ -101,52 +102,55 @@ export default function About() {
   }, []);
 
   return (
-    <Container className="container about">
-      <TextCont className="text">
-        <Intro>
-          <AnimatedLetters
-            array={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
-            index={15}
-            letterClass={letterClass}
-          />
-        </Intro>
-        <Paragraph>
-          I'm a very higly-motivated frontend developer looking for a role in IT
-          company with the opportunity to work with the latest technologies and
-          expose myself to diverse projects.
-        </Paragraph>
-        <Paragraph>
-          I'm confident, naturally curious, and always want to imporve myself to
-          become a better developer than yesterday.
-        </Paragraph>
-        <Paragraph>
-          If I define myself in one sentence, that would be a family person, a
-          sports fanatic, animal lover, and tech-obsessed!!!
-        </Paragraph>
-      </TextCont>
+    <>
+      <Container className="container about">
+        <TextCont className="text">
+          <Intro>
+            <AnimatedLetters
+              array={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+              index={15}
+              letterClass={letterClass}
+            />
+          </Intro>
+          <Paragraph>
+            I'm a very higly-motivated frontend developer looking for a role in
+            IT company with the opportunity to work with the latest technologies
+            and expose myself to diverse projects.
+          </Paragraph>
+          <Paragraph>
+            I'm confident, naturally curious, and always want to imporve myself
+            to become a better developer than yesterday.
+          </Paragraph>
+          <Paragraph>
+            If I define myself in one sentence, that would be a family person, a
+            sports fanatic, animal lover, and tech-obsessed!!!
+          </Paragraph>
+        </TextCont>
 
-      <CubeCont>
-        <Cube className="cubespin">
-          <div className="face1">
-            <FontAwesomeIcon icon={faReact} color="#5ed4f4" />
-          </div>
-          <div className="face2">
-            <FontAwesomeIcon icon={faHtml5} color="#f06529" />
-          </div>
-          <div className="face3">
-            <FontAwesomeIcon icon={faCss3} color="#28a4d9" />
-          </div>
-          <div className="face4">
-            <FontAwesomeIcon icon={faJsSquare} color="#efd81d" />
-          </div>
-          <div className="face5">
-            <FontAwesomeIcon icon={faGitAlt} color="#ec4d28" />
-          </div>
-          <div className="face6">
-            <FontAwesomeIcon icon={faNodeJs} color="#44883e" />
-          </div>
-        </Cube>
-      </CubeCont>
-    </Container>
+        <CubeCont>
+          <Cube className="cubespin">
+            <div className="face1">
+              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+            </div>
+            <div className="face2">
+              <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+            </div>
+            <div className="face3">
+              <FontAwesomeIcon icon={faCss3Alt} color="#28A4D9" />
+            </div>
+            <div className="face4">
+              <FontAwesomeIcon icon={faNodeJs} color="#44883e" />
+            </div>
+            <div className="face5">
+              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+            </div>
+            <div className="face6">
+              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+            </div>
+          </Cube>
+        </CubeCont>
+      </Container>
+      <Loader type='pacman' />
+    </>
   );
 }
