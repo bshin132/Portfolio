@@ -43,7 +43,7 @@ export default function Contact() {
                     required
                   />
                 </li>
-                <li className="half">
+                <li>
                   <input
                     type="text"
                     name="subject"
@@ -51,16 +51,20 @@ export default function Contact() {
                     required
                   />
                 </li>
-                <li className="half">
+                <li>
                   <textarea
                     type="text"
-                    name="subject"
-                    placeholder="Subject"
+                    name="message"
+                    placeholder="Message"
                     required
                   ></textarea>
                 </li>
-                <li className="half">
-                  <input type="submit" value="SEND" className="button" />
+                <li>
+                  <input
+                    type="submit"
+                    value="SEND"
+                    className="contact-button"
+                  />
                 </li>
               </ul>
             </form>
