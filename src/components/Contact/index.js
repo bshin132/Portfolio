@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import styled from 'styled-components';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
