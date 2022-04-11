@@ -19,7 +19,7 @@ export default function Contact() {
     emailjs
       .sendForm(
         'gmail',
-        'template_ui5iwtn',
+        'template_3c359v8',
         refForm.current,
         'Ia_xtOPnIPo9NdvIO'
       )
