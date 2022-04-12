@@ -64,11 +64,11 @@ export default function About() {
             and expose myself to diverse projects.
           </Content>
           <Content>
-            I'm confident, naturally curious, and always want to imporve myself
+            I'm confident, naturally curious, and always want to improve myself
             to become a better developer than yesterday.
           </Content>
           <Content>
-            If I define myself in one sentence, that would be a family person, a
+            If I define myself in one sentence, it would be a family person, a
             sports fanatic, animal lover, and tech-obsessed!!!
           </Content>
         </TextCont>
