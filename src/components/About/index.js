@@ -28,6 +28,10 @@ const CubeCont = styled.div`
   overflow: hidden;
 `;
 
+const Content = styled.p`
+  font-size:14px;
+`;
+
 const Cube = styled.div``;
 
 export default function About() {
@@ -54,19 +58,19 @@ export default function About() {
               letterClass={letterClass}
             />
           </h1>
-          <p>
+          <Content>
             I'm a very higly-motivated frontend developer looking for a role in
             IT company with the opportunity to work with the latest technologies
             and expose myself to diverse projects.
-          </p>
-          <p>
+          </Content>
+          <Content>
             I'm confident, naturally curious, and always want to imporve myself
             to become a better developer than yesterday.
-          </p>
-          <p>
+          </Content>
+          <Content>
             If I define myself in one sentence, that would be a family person, a
             sports fanatic, animal lover, and tech-obsessed!!!
-          </p>
+          </Content>
         </TextCont>
 
         <CubeCont>

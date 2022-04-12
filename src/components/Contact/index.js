@@ -50,7 +50,7 @@ export default function Contact() {
               letterClass={letterClass}
             />
           </h1>
-          <p>
+          <p style={{fontSize:"14px"}}>
             I am interested in freelance opportunities - especially ambitious or
             large projects. However, if you have other requests or questions,
             don't heistate to contact me using the form below.

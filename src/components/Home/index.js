@@ -51,7 +51,7 @@ const Subheader = styled.h2`
   color: #8d8d8d;
   margin-top: 20px;
   font-weight: 400;
-  font-size: 11px;
+  font-size: 14px;
   font-family: sans-serif;
   letter-spacing: 3px;
   animation: fadeIn 1s 1.8s backwards;
@@ -61,11 +61,11 @@ export default function Home() {
   const [letterClass, setLetterClass] = useState('text-animate');
   const nameArray = ['B', 'r', 'i', 'a', 'n'];
   const jobArray = [
-    'w',
+    'W',
     'e',
     'b',
     ' ',
-    'd',
+    'D',
     'e',
     'v',
     'e',
