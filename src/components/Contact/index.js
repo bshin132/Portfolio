@@ -9,10 +9,14 @@ export default function Contact() {
   const [letterClass, setLetterClass] = useState('text-animate');
   const refForm = useRef();
 
-  useEffect(() => {
-    return setTimeout(() => {
+  const time = () => {
+    setTimeout(() => {
       setLetterClass('text-animate-hover');
     }, 3000);
+  }
+
+  useEffect(() => {
+    return time();
   }, []);
 
   const sendEmail = (e) => {

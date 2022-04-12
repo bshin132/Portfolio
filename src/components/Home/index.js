@@ -77,10 +77,14 @@ export default function Home() {
     '.'
   ];
 
-  useEffect(() => {
-    return setTimeout(() => {
+  const time = () => {
+    setTimeout(() => {
       setLetterClass('text-animate-hover');
     }, 4000);
+  }
+
+  useEffect(() => {
+    return time();
   }, []);
 
   return (

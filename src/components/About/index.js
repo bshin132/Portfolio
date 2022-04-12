@@ -33,10 +33,14 @@ const Cube = styled.div``;
 export default function About() {
   const [letterClass, setLetterClass] = useState('text-animate');
 
-  useEffect(() => {
-    return setTimeout(() => {
+  const time = () => {
+    setTimeout(() => {
       setLetterClass('text-animate-hover');
     }, 3000);
+  }
+
+  useEffect(() => {
+    return time();
   }, []);
 
   return (
