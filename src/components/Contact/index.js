@@ -51,7 +51,7 @@ export default function Contact() {
             />
           </h1>
           <p style={{fontSize:"14px"}}>
-            I am interested in freelance opportunities - especially ambitious or
+            I am interested in any opportunities - especially ambitious or
             large projects. However, if you have other requests or questions,
             don't heistate to contact me using the form below.
           </p>

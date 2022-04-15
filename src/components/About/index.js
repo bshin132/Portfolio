@@ -69,7 +69,7 @@ export default function About() {
           </Content>
           <Content>
             If I define myself in one sentence, it would be a family person, a
-            sports fanatic, animal lover, and tech-obsessed!!!
+            sports fanatic, animal lover, and tech-addict!!!
           </Content>
         </TextCont>
 
