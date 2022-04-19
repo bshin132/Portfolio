@@ -52,6 +52,11 @@
         content: 'ABOUT';
       }
     }
+    a.work {
+      &::after {
+        content: 'WORK';
+      }
+    }
     a.contact {
       &::after {
         content: 'CONTACT';

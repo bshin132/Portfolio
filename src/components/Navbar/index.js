@@ -4,11 +4,10 @@ import styled from 'styled-components';
 import logo from '../../assets/images/logo.png';
 import { Link, NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faEye, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
 import {
   faLinkedin,
   faGithub,
-  faGit,
 } from '@fortawesome/free-brands-svg-icons';
 
 const NavContainer = styled.div`
@@ -62,6 +61,7 @@ export default function Navbar() {
         <NavLink exact="true" activeClassname="active" to="/">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
+
         <NavLink
           exact="true"
           activeClassname="active"
@@ -70,6 +70,16 @@ export default function Navbar() {
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
+
+        <NavLink
+          exact="true"
+          activeClassname="active"
+          className="work"
+          to="/work"
+        >
+          <FontAwesomeIcon icon={faEye} color="#4d4d4e" />
+        </NavLink>
+
         <NavLink
           exact="true"
           activeClassname="active"
@@ -78,6 +88,7 @@ export default function Navbar() {
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
+
       </NavLinkCont>
 
       <List>
@@ -85,7 +96,7 @@ export default function Navbar() {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://www.linkedin.com/in/brian-shin0930/"
+            href="https://www.linkedin.com/in/bshin132/"
           >
             <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
           </a>
