@@ -4,15 +4,6 @@ import AnimatedLetters from '../AnimatedLetters';
 import styled from 'styled-components';
 import { projects } from '../../assets/constants/constant';
 
-// const GridContainer = styled.section`
-//   display: grid;
-//   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-//   padding: 3rem;
-//   place-items: center;
-//   column-gap: 2rem;
-//   row-gap: 3rem;
-// `;
-
 export default function Work() {
   const [letterClass, setLetterClass] = useState('text-animate');
 
@@ -42,32 +33,32 @@ export default function Work() {
         </p>
       </div>
 
-{/* <GridContainer> */}
-      <div>
-        {projects.map((p, i) => {
-          return (
-            <div className="maincontainer" key={i}>
-              <div className="thecard">
-                <img className="thefront" src={p.image}></img>
+      <div className='grid-container'>
 
-                <div className="theback">
-                  <h1>{p.title}</h1>
-                  <p>{p.description}</p>
-                  <div>
-                    {p.tags.map((t, i) => {
-                      return <div key={i}>{t}</div>;
-                    })}
-                  </div>
-                  <form action={p.source}>
-                    <input type="submit" value="Source" />
-                  </form>
+      {projects.map((p, i) => {
+        return (
+          <div className="maincontainer" key={i}>
+            <div className="thecard">
+              <img className="thefront" src={p.image}></img>
+
+              <div className="theback">
+                <h1>{p.title}</h1>
+                <p>{p.description}</p>
+                <div>
+                  {p.tags.map((t, i) => {
+                    return <div key={i}>{t}</div>;
+                  })}
                 </div>
+                <form action={p.source}>
+                  <input type="submit" value="Github" />
+                </form>
               </div>
             </div>
-          );
-        })}
-      </div>
-      {/* </GridContainer> */}
+          </div>
+        );
+      })}
+                </div>
+
     </div>
   );
 }
