@@ -73,7 +73,7 @@ export const projects = [
       'Cypress',
     ],
     source: 'https://github.com/bshin132/scheduler',
-    id: 2,
+    id: 3,
   },
   {
     title: 'Jungle-Rails',
@@ -82,7 +82,7 @@ export const projects = [
     image: require('../images/jungle.png'),
     tags: ['Ruby • ', 'Rails • ', 'HTML • ', 'SCSS • ', 'JavaScript', 'PostgreSQL'],
     source: 'https://github.com/bshin132/jungle-rails',
-    id: 3,
+    id: 4,
   },
   {
     title: 'Tweeter',
@@ -91,7 +91,7 @@ export const projects = [
     image: require('../images/tweeter.png'),
     tags: ['HTML • ', 'SCSS • ', 'JavaScript • ', 'jQuery • ', 'Ajax'],
     source: 'https://github.com/bshin132/tweeter2',
-    id: 3,
+    id: 5,
   },
   {
     title: 'TinyApp',
@@ -108,6 +108,25 @@ export const projects = [
       'EJS',
     ],
     source: 'https://github.com/bshin132/tinyappV2',
-    id: 3,
+    id: 6,
+  },
+  {
+    title: 'My Portfolio',
+    description:
+      'A high-performance, responsive website that uses the power of Greensock (GSAP) & animate.css powered animations for enriching user experience ',
+    image: require('../images/portfolio.png'),
+    tags: [
+      'React • ',
+      'HTML • ',
+      'SCSS • ',
+      'Styled-Components • ',
+      'JavaScript • ',
+      'Greensock • ',
+      'Animate.css • ',
+      'EmailJS • ',
+      'Leaflet • ',
+    ],
+    source: 'https://github.com/bshin132/Portfolio',
+    id: 7,
   },
 ];

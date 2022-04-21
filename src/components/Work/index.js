@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
-import styled from 'styled-components';
 import { projects } from '../../assets/constants/constant';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { image } from '../../assets/constants/constant';
 
 export default function Work() {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -31,8 +29,9 @@ export default function Work() {
           />
         </h1>
         <p style={{ fontSize: '14px' }}>
-          I have developed many projects using various technologies. Here are
-          some projects that I developed.
+          I have worked with a range of technologies in the web development
+          world. From Frontend to Design. As a frontend developer and designer,
+          I care deeply about user experience when developing.
         </p>
       </div>
 
