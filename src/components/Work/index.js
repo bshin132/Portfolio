@@ -33,32 +33,30 @@ export default function Work() {
         </p>
       </div>
 
-      <div className='grid-container'>
+      <div className="grid-container">
+        {projects.map((p, i) => {
+          return (
+            <div className="maincontainer" key={i}>
+              <div className="thecard">
+                <img className="thefront" src={p.image}></img>
 
-      {projects.map((p, i) => {
-        return (
-          <div className="maincontainer" key={i}>
-            <div className="thecard">
-              <img className="thefront" src={p.image}></img>
-
-              <div className="theback">
-                <h1>{p.title}</h1>
-                <p>{p.description}</p>
-                <div>
-                  {p.tags.map((t, i) => {
-                    return <div key={i}>{t}</div>;
-                  })}
+                <div className="theback">
+                  <h1>{p.title}</h1>
+                  <p>{p.description}</p>
+                  <div>
+                    {p.tags.map((t, i) => {
+                      return <div key={i}>{t}</div>;
+                    })}
+                  </div>
+                  <form action={p.source}>
+                    <input type="submit" value="Github" />
+                  </form>
                 </div>
-                <form action={p.source}>
-                  <input type="submit" value="Github" />
-                </form>
               </div>
             </div>
-          </div>
-        );
-      })}
-                </div>
-
+          );
+        })}
+      </div>
     </div>
   );
 }
