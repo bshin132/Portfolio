@@ -40,7 +40,7 @@ export default function Work() {
           return (
             <div className="maincontainer" key={i}>
               <div className="thecard">
-                <img className="thefront" src={p.image}></img>
+                <img className="thefront" src={p.image} alt="projects"></img>
                 <div className="theback">
                   <h1>{p.title}</h1>
                   <p>{p.description}</p>
