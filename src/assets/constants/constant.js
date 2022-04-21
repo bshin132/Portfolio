@@ -79,7 +79,7 @@ export const projects = [
     title: 'Jungle-Rails',
     description:
       'A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example. Learned how to navigate through existing codes and implement new features using Ruby on Rails. Simulating real world situations.',
-    image: require('../images/bakedpotato.png'),
+    image: require('../images/jungle.png'),
     tags: ['Ruby • ', 'Rails • ', 'HTML • ', 'SCSS • ', 'JavaScript', 'PostgreSQL'],
     source: 'https://github.com/bshin132/jungle-rails',
     id: 3,
@@ -88,7 +88,7 @@ export const projects = [
     title: 'Tweeter',
     description:
       'Tweeter is a simple, single-page Twitter clone. Developed to practice front-end skills',
-    image: require('../images/bakedpotato.png'),
+    image: require('../images/tweeter.png'),
     tags: ['HTML • ', 'SCSS • ', 'JavaScript • ', 'jQuery • ', 'Ajax'],
     source: 'https://github.com/bshin132/tweeter2',
     id: 3,
@@ -97,7 +97,7 @@ export const projects = [
     title: 'TinyApp',
     description:
       'TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs.',
-    image: require('../images/bakedpotato.png'),
+    image: require('../images/tinyapp.png'),
     tags: [
       'Node • ',
       'Express • ',
