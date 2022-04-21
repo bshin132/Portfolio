@@ -80,7 +80,14 @@ export const projects = [
     description:
       'A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example. Learned how to navigate through existing codes and implement new features using Ruby on Rails. Simulating real world situations.',
     image: require('../images/jungle.png'),
-    tags: ['Ruby • ', 'Rails • ', 'HTML • ', 'SCSS • ', 'JavaScript', 'PostgreSQL'],
+    tags: [
+      'Ruby • ',
+      'Rails • ',
+      'HTML • ',
+      'SCSS • ',
+      'JavaScript',
+      'PostgreSQL',
+    ],
     source: 'https://github.com/bshin132/jungle-rails',
     id: 4,
   },

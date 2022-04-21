@@ -4,7 +4,12 @@ import styled from 'styled-components';
 import logo from '../../assets/images/logo.png';
 import { Link, NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faEye, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import {
+  faEnvelope,
+  faEye,
+  faHome,
+  faUser,
+} from '@fortawesome/free-solid-svg-icons';
 import {
   faLinkedin,
   faGithub,
@@ -89,7 +94,6 @@ export default function Navbar() {
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
-
       </NavLinkCont>
 
       <List>
@@ -99,7 +103,11 @@ export default function Navbar() {
             rel="noreferrer"
             href="https://www.linkedin.com/in/bshin132/"
           >
-            <FontAwesomeIcon className='navicon' icon={faLinkedin} color="#4d4d4e" />
+            <FontAwesomeIcon
+              className="navicon"
+              icon={faLinkedin}
+              color="#4d4d4e"
+            />
           </a>
         </ListItem>
         <ListItem>
@@ -108,7 +116,11 @@ export default function Navbar() {
             rel="noreferrer"
             href="https://github.com/bshin132"
           >
-            <FontAwesomeIcon className='navicon' icon={faGithub} color="#4d4d4e" />
+            <FontAwesomeIcon
+              className="navicon"
+              icon={faGithub}
+              color="#4d4d4e"
+            />
           </a>
         </ListItem>
         <ListItem>
@@ -117,7 +129,11 @@ export default function Navbar() {
             rel="noreferrer"
             href="https://www.instagram.com/bshin3714/?hl=en"
           >
-            <FontAwesomeIcon className='navicon' icon={faInstagram} color="#4d4d4e" />
+            <FontAwesomeIcon
+              className="navicon"
+              icon={faInstagram}
+              color="#4d4d4e"
+            />
           </a>
         </ListItem>
       </List>
