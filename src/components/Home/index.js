@@ -58,7 +58,9 @@ const Subheader = styled.h2`
 `;
 
 const LogoContainer = styled.div`
+  position: relative;
   animation: fadeIn 1s 1.8s backwards;
+  top: 500px;
 `;
 
 export default function Home() {
