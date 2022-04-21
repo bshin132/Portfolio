@@ -57,6 +57,10 @@ const Subheader = styled.h2`
   animation: fadeIn 1s 1.8s backwards;
 `;
 
+const LogoContainer = styled.div`
+  animation: fadeIn 1s 1.8s backwards;
+`;
+
 export default function Home() {
   const [letterClass, setLetterClass] = useState('text-animate');
   const nameArray = ['B', 'r', 'i', 'a', 'n'];
@@ -74,14 +78,14 @@ export default function Home() {
     'p',
     'e',
     'r',
-    '.'
+    '.',
   ];
 
   const time = () => {
     setTimeout(() => {
       setLetterClass('text-animate-hover');
     }, 4000);
-  }
+  };
 
   useEffect(() => {
     return time();
@@ -89,36 +93,36 @@ export default function Home() {
 
   return (
     <>
-    <Container className="container">
-      <TextCont>
-        <Intro>
-          <span className={letterClass}>H</span>
-          <span className={`${letterClass} _12`}>i,</span>
-          <br />
-          <span className={`${letterClass} _13`}>I</span>
-          <span className={`${letterClass} _14`}>'m</span>&nbsp;
-          <AnimatedLetters
-            letterClass={letterClass}
-            array={nameArray}
-            index={15}
-          />
-          <br />
-          <AnimatedLetters
-            letterClass={letterClass}
-            array={jobArray}
-            index={20}
-          />
-        </Intro>
-        <Subheader>Frontend Developer / UI/UX Designer</Subheader>
-        <Link to="/contact" className="button">
-          CONTACT ME
-        </Link>
-      </TextCont>
-      <div>
-        <Logo />
-      </div>
-    </Container>
-    <Loader type='pacman' />
+      <Container className="container">
+        <TextCont>
+          <Intro>
+            <span className={letterClass}>H</span>
+            <span className={`${letterClass} _12`}>i,</span>
+            <br />
+            <span className={`${letterClass} _13`}>I</span>
+            <span className={`${letterClass} _14`}>'m</span>&nbsp;
+            <AnimatedLetters
+              letterClass={letterClass}
+              array={nameArray}
+              index={15}
+            />
+            <br />
+            <AnimatedLetters
+              letterClass={letterClass}
+              array={jobArray}
+              index={20}
+            />
+          </Intro>
+          <Subheader>Frontend Developer / UI/UX Designer</Subheader>
+          <Link to="/contact" className="button">
+            CONTACT ME
+          </Link>
+        </TextCont>
+        <LogoContainer>
+          <Logo />
+        </LogoContainer>
+      </Container>
+      <Loader type="pacman" />
     </>
   );
 }
