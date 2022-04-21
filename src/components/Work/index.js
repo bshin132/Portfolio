@@ -43,12 +43,12 @@ export default function Work() {
                 <div className="theback">
                   <h1>{p.title}</h1>
                   <p>{p.description}</p>
-                  <div>
+                  <div className='stacks'>
                     {p.tags.map((t, i) => {
-                      return <div key={i}>{t}</div>;
+                      return <span key={i}>{t}</span>;
                     })}
                   </div>
-                  <form action={p.source}>
+                  <form className='form' action={p.source}>
                     <input type="submit" value="Github" />
                   </form>
                 </div>
