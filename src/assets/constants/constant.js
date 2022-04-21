@@ -78,7 +78,7 @@ export const projects = [
   {
     title: 'Jungle-Rails',
     description:
-      'A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example. Learned how to navigate through existing codes and implement new features using Ruby on Rails. Simulating real world situations.',
+      'A mini e-commerce application built with Rails 4.2 for purposes of learning Rails by example. Learned how to navigate through existing codes and implement new features using Ruby on Rails. Simulating real world situations.',
     image: require('../images/jungle.png'),
     tags: [
       'Ruby • ',
