@@ -61,7 +61,7 @@ export const projects = [
     title: 'Scheduler',
     description:
       'Interview Scheduler is a Web App developed using React, Storybook, Axios, and Jest to demonstrate modern web development. Single page application that allows users to book, create, or delete a specific interview.',
-    image: '/images/3.jpg',
+    image: require('../images/scheduler.png'),
     tags: [
       'React • ',
       'HTML • ',
@@ -79,16 +79,16 @@ export const projects = [
     title: 'Jungle-Rails',
     description:
       'A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example. Learned how to navigate through existing codes and implement new features using Ruby on Rails. Simulating real world situations.',
-    image: '/images/4.jpg',
-    tags: ['Ruby • ', 'Rails • ', 'HTML • ', 'SCSS • ', 'JavaScript'],
+    image: require('../images/bakedpotato.png'),
+    tags: ['Ruby • ', 'Rails • ', 'HTML • ', 'SCSS • ', 'JavaScript', 'PostgreSQL'],
     source: 'https://github.com/bshin132/jungle-rails',
     id: 3,
   },
   {
     title: 'Tweeter',
     description:
-      'Tweeter is a simple, single-page Twitter clone. Developed to practice HTML, CSS, JS, jQuery and AJAX front-end skills',
-    image: '/images/4.jpg',
+      'Tweeter is a simple, single-page Twitter clone. Developed to practice front-end skills',
+    image: require('../images/bakedpotato.png'),
     tags: ['HTML • ', 'SCSS • ', 'JavaScript • ', 'jQuery • ', 'Ajax'],
     source: 'https://github.com/bshin132/tweeter2',
     id: 3,
@@ -97,7 +97,7 @@ export const projects = [
     title: 'TinyApp',
     description:
       'TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs.',
-    image: '/images/4.jpg',
+    image: require('../images/bakedpotato.png'),
     tags: [
       'Node • ',
       'Express • ',
