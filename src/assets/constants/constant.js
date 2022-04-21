@@ -3,7 +3,7 @@ export const projects = [
     title: 'NoLine',
     description:
       'An app that saves time for our users by displaying restaurant capacity and estimated wait times live based on data input from the community.',
-    image: '../images/logo.png',
+    image: '../../images/logo.png',
     tags: [
       'React • ',
       'HTML • ',
