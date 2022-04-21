@@ -3,7 +3,7 @@ export const projects = [
     title: 'NoLine',
     description:
       'An app that saves time for our users by displaying restaurant capacity and estimated wait times live based on data input from the community.',
-    image: '../../images/logo.png',
+    image: require('../images/noline.png'),
     tags: [
       'React • ',
       'HTML • ',
@@ -22,7 +22,7 @@ export const projects = [
     title: 'TravelBuddy',
     description:
       'Web app search engine and travel guide that displays a list of destinations. Each destinations have detailed information on multiple stops users can visit',
-    image: '/images/2.png',
+    image: require('../images/travelbuddy.png'),
     tags: [
       'React • ',
       'HTML • ',
@@ -42,7 +42,7 @@ export const projects = [
     title: 'BakedPotato',
     description:
       'A food ordering experience for a single restaurant. Select one or more dishes and place an order for pick-up, they will receive a notification when their order is ready.',
-    image: '/images/3.jpg',
+    image: require('../images/bakedpotato.png'),
     tags: [
       'HTML • ',
       'SCSS • ',

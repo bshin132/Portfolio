@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { projects } from '../../assets/constants/constant';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import {image} from '../../assets/constants/constant'
 
 export default function Work() {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -40,7 +41,7 @@ export default function Work() {
           return (
             <div className="maincontainer" key={i}>
               <div className="thecard">
-                <img className="thefront" src={p.image}></img>
+                <img className="thefront" src={`${p.image}`}></img>
 
                 <div className="theback">
                   <h1>{p.title}</h1>
