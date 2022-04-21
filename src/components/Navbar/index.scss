@@ -44,22 +44,26 @@
       &:first-child {
         &::after {
           content: 'HOME';
+          font-family: sans-serif;
         }
       }
     }
     a.about {
       &::after {
         content: 'ABOUT';
+        font-family: sans-serif;
       }
     }
     a.work {
       &::after {
         content: 'WORK';
+        font-family: sans-serif;
       }
     }
     a.contact {
       &::after {
         content: 'CONTACT';
+        font-family: sans-serif;
       }
     }
     a.active {
@@ -82,4 +86,9 @@
       }
     }
   }
+}
+
+.navicon {
+  width: 22px;
+  height: 22px;
 }

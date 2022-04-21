@@ -3,6 +3,8 @@ import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import styled from 'styled-components';
 import { projects } from '../../assets/constants/constant';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export default function Work() {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -43,14 +45,16 @@ export default function Work() {
                 <div className="theback">
                   <h1>{p.title}</h1>
                   <p>{p.description}</p>
-                  <div className='stacks'>
+                  <div className="stacks">
                     {p.tags.map((t, i) => {
                       return <span key={i}>{t}</span>;
                     })}
                   </div>
-                  <form className='form' action={p.source}>
-                    <input type="submit" value="Github" />
-                  </form>
+                  <div>
+                    <a target="_blank" rel="noreferrer" href={p.source}>
+                      <FontAwesomeIcon className="icon" icon={faGithub} color="#000" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

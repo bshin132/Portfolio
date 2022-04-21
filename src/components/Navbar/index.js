@@ -8,6 +8,7 @@ import { faEnvelope, faEye, faHome, faUser } from '@fortawesome/free-solid-svg-i
 import {
   faLinkedin,
   faGithub,
+  faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
 
 const NavContainer = styled.div`
@@ -98,7 +99,7 @@ export default function Navbar() {
             rel="noreferrer"
             href="https://www.linkedin.com/in/bshin132/"
           >
-            <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+            <FontAwesomeIcon className='navicon' icon={faLinkedin} color="#4d4d4e" />
           </a>
         </ListItem>
         <ListItem>
@@ -107,7 +108,16 @@ export default function Navbar() {
             rel="noreferrer"
             href="https://github.com/bshin132"
           >
-            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+            <FontAwesomeIcon className='navicon' icon={faGithub} color="#4d4d4e" />
+          </a>
+        </ListItem>
+        <ListItem>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.instagram.com/bshin3714/?hl=en"
+          >
+            <FontAwesomeIcon className='navicon' icon={faInstagram} color="#4d4d4e" />
           </a>
         </ListItem>
       </List>
