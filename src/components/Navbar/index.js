@@ -64,13 +64,12 @@ export default function Navbar() {
       </Link>
 
       <NavLinkCont className="nav">
-        <NavLink exact="true" activeClassname="active" to="/">
+        <NavLink exact="true" to="/">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
 
         <NavLink
           exact="true"
-          activeClassname="active"
           className="about"
           to="/about"
         >
@@ -79,7 +78,6 @@ export default function Navbar() {
 
         <NavLink
           exact="true"
-          activeClassname="active"
           className="work"
           to="/work"
         >
@@ -88,7 +86,6 @@ export default function Navbar() {
 
         <NavLink
           exact="true"
-          activeClassname="active"
           className="contact"
           to="/contact"
         >
