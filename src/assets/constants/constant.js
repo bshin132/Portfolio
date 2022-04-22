@@ -120,7 +120,7 @@ export const projects = [
   {
     title: 'My Portfolio',
     description:
-      'A high-performance, responsive website that uses the power of Greensock (GSAP) & animate.css powered animations for enriching user experience ',
+      'A high-performance, website that uses the power of Greensock (GSAP) & animate.css powered animations for enriching user experience ',
     image: require('../images/portfolio.png'),
     tags: [
       'React • ',
