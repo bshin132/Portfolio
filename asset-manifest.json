@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.3e221f39.css",
-    "main.js": "/Portfolio/static/js/main.f6d5b346.js",
+    "main.js": "/Portfolio/static/js/main.82af12c5.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/bakedpotato.png": "/Portfolio/static/media/bakedpotato.804d16d94d3a80df2fe7.png",
     "static/media/logo.png": "/Portfolio/static/media/logo.a06998d6c03c00e59541.png",
@@ -17,11 +17,11 @@
     "static/media/CoolveticaRg-Regular.woff2": "/Portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/Portfolio/index.html",
     "main.3e221f39.css.map": "/Portfolio/static/css/main.3e221f39.css.map",
-    "main.f6d5b346.js.map": "/Portfolio/static/js/main.f6d5b346.js.map",
+    "main.82af12c5.js.map": "/Portfolio/static/js/main.82af12c5.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3e221f39.css",
-    "static/js/main.f6d5b346.js"
+    "static/js/main.82af12c5.js"
   ]
 }
