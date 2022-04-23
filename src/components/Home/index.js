@@ -62,7 +62,7 @@ export default function Home() {
             CONTACT ME
           </Link>
         </div>
-        <div>
+        <div className="logo">
           <Logo />
         </div>
       </div>
