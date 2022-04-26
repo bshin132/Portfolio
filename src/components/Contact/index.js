@@ -13,7 +13,7 @@ export default function Contact() {
     setTimeout(() => {
       setLetterClass('text-animate-hover');
     }, 3000);
-  }
+  };
 
   useEffect(() => {
     return time();
@@ -50,10 +50,10 @@ export default function Contact() {
               letterClass={letterClass}
             />
           </h1>
-          <p style={{fontSize:"14px"}}>
-            I am interested in any opportunities - especially ambitious or
-            large projects. However, if you have other requests or questions,
-            don't heistate to contact me using the form below.
+          <p style={{ fontSize: '14px' }}>
+            I am interested in any opportunities - especially ambitious or large
+            projects. However, if you have other requests or questions, don't
+            heistate to contact me using the form below.
           </p>
           <div className="form">
             <form ref={refForm} onSubmit={sendEmail}>
@@ -105,14 +105,17 @@ export default function Contact() {
           <br />
           <span>bshin132@gmail.com</span>
         </div>
-        <div className='map-wrap'>
-          <MapContainer center={[49.259000, -122.870736]} zoom={13} zoomControl={false}>
+        <div className="map-wrap">
+          <MapContainer
+            center={[49.259, -122.870736]}
+            zoom={13}
+            zoomControl={false}
+          >
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[49.259000, -122.870736]}>
+            <Marker position={[49.259, -122.870736]}>
               <Popup>Brian lives here, come over for a cup of coffee :)</Popup>
             </Marker>
           </MapContainer>
-
         </div>
       </div>
       <Loader type="pacman" />

@@ -24,6 +24,15 @@ const NavContainer = styled.div`
   top: 0;
   z-index: 3;
   min-height: 500px;
+  @media screen and (max-width: 960px) {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    min-height: 0;
+  }
 `;
 
 const Logo = styled.img`
@@ -31,6 +40,11 @@ const Logo = styled.img`
   margin: 8px auto;
   width: 24px;
   height: auto;
+  @media (max-width: 960px) {
+    float: left;
+    padding: 2px 12px;
+    margin-right: 20px;
+  }
 `;
 
 const NavLinkCont = styled.nav`
@@ -41,6 +55,18 @@ const NavLinkCont = styled.nav`
   top: 50%;
   margin-top: -120px;
   width: 100%;
+  @media (max-width: 960px) {
+    width: 42%;
+    position: absolute;
+    left: 50%;
+    margin-left: -19%;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    height: 60px;
+    top: 0;
+    margin-top: 22px;
+  }
 `;
 
 const List = styled.ul`
@@ -52,9 +78,29 @@ const List = styled.ul`
   list-style: none;
   text-align: center;
   margin: 0;
+  @media (max-width: 960px) {
+    position: static;
+    bottom: 20px;
+    width: auto;
+    height: 60px;
+    line-height: 60px;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    float: right;
+  }
 `;
 
-const ListItem = styled.li``;
+const ListItem = styled.li`
+  @media (max-width: 960px) {
+    float: right;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 10px;
+  }
+`;
 
 export default function Navbar() {
   return (
@@ -64,31 +110,19 @@ export default function Navbar() {
       </Link>
 
       <NavLinkCont className="nav">
-        <NavLink exact="true" to="/">
+        <NavLink exact="true" to="/" className="home">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
 
-        <NavLink
-          exact="true"
-          className="about"
-          to="/about"
-        >
+        <NavLink exact="true" className="about" to="/about">
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
 
-        <NavLink
-          exact="true"
-          className="work"
-          to="/work"
-        >
+        <NavLink exact="true" className="work" to="/work">
           <FontAwesomeIcon icon={faEye} color="#4d4d4e" />
         </NavLink>
 
-        <NavLink
-          exact="true"
-          className="contact"
-          to="/contact"
-        >
+        <NavLink exact="true" className="contact" to="/contact">
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
       </NavLinkCont>
