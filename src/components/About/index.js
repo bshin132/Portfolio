@@ -30,6 +30,9 @@ const TextCont = styled.div`
     width: 80% !important;
     min-height: 0;
   }
+  @media (max-width: 460px) {
+    top: 360px !important;;
+  }
 `;
 
 const CubeCont = styled.div`
@@ -46,6 +49,12 @@ const CubeCont = styled.div`
     width: 100%;
     height: 445px;
     top: 390px;
+  }
+  @media (max-width: 600px) {
+    top:480px;
+  }
+  @media (max-width: 460px) {
+    top:480px;
   }
 `;
 
