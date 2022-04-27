@@ -13,9 +13,24 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import Loader from 'react-loaders';
 
-const Container = styled.div``;
+const Container = styled.div`
+  @media (max-width: 960px) {
+    width: 100%;
+    height: 75%;
+    padding-bottom: 58px;
+    box-sizing: border-box;
+    position: relative;
+    top: 0;
+    overflow: visible;
+  }
+`;
 
-const TextCont = styled.div``;
+const TextCont = styled.div`
+  @media (max-width: 960px) {
+    width: 80% !important;
+    min-height: 0;
+  }
+`;
 
 const CubeCont = styled.div`
   width: 50%;
@@ -26,10 +41,16 @@ const CubeCont = styled.div`
   position: absolute;
   right: 0;
   overflow: hidden;
+  @media (max-width: 960px) {
+    position: relative;
+    width: 100%;
+    height: 445px;
+    top: 390px;
+  }
 `;
 
 const Content = styled.p`
-  font-size:14px;
+  font-size: 14px;
 `;
 
 const Cube = styled.div``;
@@ -41,7 +62,7 @@ export default function About() {
     setTimeout(() => {
       setLetterClass('text-animate-hover');
     }, 3000);
-  }
+  };
 
   useEffect(() => {
     return time();
