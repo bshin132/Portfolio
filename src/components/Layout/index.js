@@ -20,6 +20,14 @@ const TopContent = styled.span`
   left: 120px;
   font-size: 18px;
   font-family: 'La Belle Aurore';
+  @media (max-width: 960px) {
+    position: absolute;
+    clear: both;
+    float: left;
+    margin-top: 90px;
+    margin-left: -90px;
+    bottom: 0;
+  }
 `;
 
 const BottomContent = styled.span`
@@ -30,6 +38,14 @@ const BottomContent = styled.span`
   left: 120px;
   font-size: 18px;
   font-family: 'La Belle Aurore';
+  @media (max-width: 960px) {
+    position: absolute;
+    clear: both;
+    float: left;
+    margin-top: 22px;
+    margin-left: -90px;
+    bottom: 0;
+  }
 `;
 
 const BottomContentHtml = styled.span`

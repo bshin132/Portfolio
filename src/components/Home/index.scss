@@ -6,6 +6,7 @@
     transform: translateY(-50%);
     width: 40%;
     max-height: 90%;
+    z-index: 5;
   }
 
   h1 {
@@ -72,5 +73,28 @@ h2 {
   &:hover {
     background-color: #ffd700;
     color: #333;
+  }
+}
+
+.logo {
+  z-index: -200;
+}
+
+@media (max-width:960px) {
+  .container {
+    width: 100%;
+    height: auto;
+    padding-bottom: 58px;
+    box-sizing: border-box;
+    position: relative;
+    top: 180px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width:1024px) {
+  .home-page .text-home {
+    width: 80%;
+    min-height: 0;
   }
 }

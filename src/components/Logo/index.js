@@ -12,6 +12,14 @@ const Cont = styled.div`
   bottom: 0;
   left: auto;
   margin: auto;
+  @media (max-width: 960px) {
+    width: 200px;
+    height: 200px;
+    top: -45px;
+  }
+  @media (max-width: 450px) {
+    display: none;
+  }
 `;
 
 const Image = styled.img`
