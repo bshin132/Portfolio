@@ -105,3 +105,11 @@
     height: 60px;
   }
 }
+
+@media (max-width:530px) {
+  .nav-bar .nav.show {
+    left: 0;
+    opacity: 1;
+    display: flex;
+  }
+}

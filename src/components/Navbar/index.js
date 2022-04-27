@@ -9,6 +9,7 @@ import {
   faEye,
   faHome,
   faUser,
+  faBars,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faLinkedin,
@@ -32,6 +33,9 @@ const NavContainer = styled.div`
     left: 0;
     z-index: 3;
     min-height: 0;
+  }
+  @media (max-width: 530px) {
+    position: fixed;
   }
 `;
 
@@ -67,6 +71,22 @@ const NavLinkCont = styled.nav`
     top: 0;
     margin-top: 22px;
   }
+  @media (max-width: 530px) {
+    width: 100%;
+    position: fixed;
+    left: 100%;
+    opacity: 0;
+    margin-left: 0;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    height: 45px;
+    top: 60px;
+    margin-top: 0;
+    background: #181818;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
 `;
 
 const List = styled.ul`
@@ -91,6 +111,9 @@ const List = styled.ul`
     margin: 0;
     float: right;
   }
+  @media (max-width: 530px) {
+    display: none;
+  }
 `;
 
 const ListItem = styled.li`
@@ -102,6 +125,20 @@ const ListItem = styled.li`
   }
 `;
 
+const Menu = styled.a`
+  display: none;
+  :hover {
+    color: #ffd700;
+  }
+  @media (max-width: 530px) {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    margin: -6px 20px 10px 10px;
+    display: block;
+  }
+`;
+
 export default function Navbar() {
   return (
     <NavContainer className="nav-bar">
@@ -109,7 +146,7 @@ export default function Navbar() {
         <Logo src={`${logo}`} className="image" />
       </Link>
 
-      <NavLinkCont className="nav">
+      <NavLinkCont className="nav show">
         <NavLink exact="true" to="/" className="home">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
@@ -168,6 +205,9 @@ export default function Navbar() {
           </a>
         </ListItem>
       </List>
+      <Menu>
+        <FontAwesomeIcon icon={faBars} />
+      </Menu>
     </NavContainer>
   );
 }
