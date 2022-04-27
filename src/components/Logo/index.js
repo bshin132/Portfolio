@@ -17,7 +17,7 @@ const Cont = styled.div`
     height: 200px;
     top: -45px;
   }
-  @media (max-width: 450px) {
+  @media (max-width: 530px) {
     display: none;
   }
 `;

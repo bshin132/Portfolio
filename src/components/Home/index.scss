@@ -36,6 +36,9 @@
       top: 230px;
       left: -10px;
       opacity: 0.6;
+      @media (max-width: 398px) {
+        top: 310px;
+      }
     }
   }
 }
@@ -80,7 +83,7 @@ h2 {
   z-index: -200;
 }
 
-@media (max-width:960px) {
+@media (max-width: 960px) {
   .container {
     width: 100%;
     height: auto;
@@ -90,11 +93,21 @@ h2 {
     top: 180px;
     overflow: hidden;
   }
+  .button {
+    display: none;
+  }
 }
 
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
   .home-page .text-home {
     width: 80%;
     min-height: 0;
+  }
+}
+
+@media (max-width: 530px) {
+  .home-page .text-home {
+    width: 85%;
+    left: 10%;
   }
 }
