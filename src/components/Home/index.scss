@@ -93,6 +93,9 @@ h2 {
     top: 180px;
     overflow: hidden;
   }
+  .button {
+    display: none;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -106,8 +109,5 @@ h2 {
   .home-page .text-home {
     width: 85%;
     left: 10%;
-  }
-  .button {
-    display: none;
   }
 }
